@@ -16,25 +16,22 @@
     <div id="page-container">
       <div id="content-wrap">
 
-        <nav class="navbar fixed-top navbar-light bg-light">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-1"></div>
-              <div class="col-md-2">
-                <header>
-                  <h1>Abigail Whited</h1>
-                </header>
-              </div>
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <a class="navbar-brand" href="index.html">About</a>
-                <a class="navbar-brand" href="contact.html">Contact</a>
-                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
-              </div>
-            </div>
-          </div>
+        <nav class="navbar navbar-light bg-light">
+          <header>  
+            <h1>Abigail Whited</h1>
+          </header>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link last" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </nav>
-
 
         <div class="background"></div>
 
@@ -45,15 +42,15 @@
               <hr>
               <form>
                 <div class="form-group">
-                  <label for="fullname">Full name:</label>
+                  <label for="fullname" class="label">Full name:</label>
                   <input type="text" class="form-control" id="fullname" placeholder="Full name">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label for="exampleInputEmail1" class="label">Email address:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                  <label for="inputMessage">Message:</label><br>
+                  <label class="label">Message:</label><br>
                   <textarea name="message" class="form-control" rows=6></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary button">Submit</button>
