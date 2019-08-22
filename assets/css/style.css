@@ -9,6 +9,15 @@ body {
   height: 100%
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 0rem;
+}
+
 a {
   float: right;
   margin-top: 20px;
@@ -16,7 +25,7 @@ a {
   color: #777777;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -27,6 +36,7 @@ h1 {
   background: #4aaaa5;
   width: 300px;
   height: 75px;
+  margin-left: 50px;
   float: left;
   line-height: 75px;
 }
@@ -72,12 +82,12 @@ p {
 }
 
 .content {
-  width: 960px;
   background-color: #ffffff;
   border: 2px solid #dddddd;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 hr {
@@ -88,34 +98,39 @@ hr {
   
 }
 
-button {
+.button {
   background-color: #4aaaa5;
   color: #ffffff;
   border: none;
   text-align: center;
-  height: 30px;
+  height: 40px;
   width: 75px;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 footer {
-  position: relative;
+  position: absolute;
   clear: both;
   width: 100%;
   left: 0px;
-  bottom: 0px;
+  bottom: 0;
   background-color: #666666;
   border-top: 8px solid #4aaaa5;
   height: 20px;
-  margin-top: -20px;
   text-align: center;
   font-size: 12px;
   padding: 20px;
 }
 
 #copyright {
-  padding-top: 0px;
+  position: absolute;
+  bottom: 0;
+  padding: 0px;
+  font-size: 20px;
+  color: #777777;
+  width: 95%;
 }
 
 .project {
@@ -134,3 +149,4 @@ footer {
 input, textarea {
   padding: 5px;
 }
+
